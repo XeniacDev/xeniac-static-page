@@ -1,0 +1,27 @@
+
+# Created by https://www.gitignore.io/api/code,laravel
+# Edit at https://www.gitignore.io/?templates=code,laravel
+
+### Code ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+
+### Laravel ###
+node_modules/
+npm-debug.log
+yarn-error.log
+
+
+# Zal
+dist
+build
+mix-manifest.json
+
+
+test/build.css
+test/index.html
+test/tailwind.min.css

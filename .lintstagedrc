@@ -1,0 +1,7 @@
+{
+    "*.scss": [
+        "yarn prettier --write src/**",
+        "yarn lint",
+        "git add"
+    ],
+}
