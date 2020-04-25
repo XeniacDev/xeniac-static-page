@@ -31,3 +31,15 @@ a {
 li {
     list-style: none;
 }
+
+// custom classes
+
+.colored-title {
+    font-weight: 900;
+    color: var(--primary-color);
+
+    & > span {
+        font-weight: 300;
+        color: white;
+    }
+}
