@@ -1,17 +1,18 @@
 import { gsap } from "gsap";
 
-// variables
-const loadingTextParams = {
-    opacity: 0,
-    y: 100,
-    duration: 1.2,
-    ease: "expo.inOut"
-};
-
 const animations = (function() {
-    let tl = gsap
+    // variables
+    const loadingTextParams = {
+        opacity: 0,
+        y: 100,
+        duration: 1.2,
+        ease: "expo.inOut"
+    };
+
+    let lodingLayout = gsap
         .timeline({
-            yoyo: false
+            yoyo: false,
+            onComplete: heroSectionAnimation
         })
         .from(".x-loading-text", {
             ...loadingTextParams
@@ -30,7 +31,9 @@ const animations = (function() {
             }
         });
 
-    console.log(tl);
+    function heroSectionAnimation() {
+        console.log("hello wolrd");
+    }
 })();
 
 export default animations;
