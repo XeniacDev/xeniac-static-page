@@ -4,20 +4,35 @@
     &-indicators {
         display: flex;
         flex-direction: row;
+        z-index: 999;
 
         @include make-div-fullscreen;
 
         &-indicator {
             flex: 1;
-            height: 100vh;
+            height: 100%;
+            transform: scaleY(1);
             background: white;
         }
     }
 
-    &-text {
+    &-texts {
         color: black;
         z-index: 999;
+        height: 47px;
+        overflow: hidden;
 
         @include self-center;
+
+        & > p {
+            font-size: 1.7rem;
+        }
+
+        & > span {
+            display: inline-block;
+            color: rgb(137, 137, 137);
+            font-size: 0.9rem;
+            text-align: center;
+        }
     }
 }
