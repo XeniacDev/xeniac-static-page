@@ -1,12 +1,12 @@
-@mixin make-div-fullscreen {
-    position: absolute;
+@mixin make-div-fullscreen($pos: absolute) {
+    position: $pos;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
 }
 
-@mixin self-center {
+@mixin self-center() {
     position: absolute;
     top: 50%;
     left: 50%;

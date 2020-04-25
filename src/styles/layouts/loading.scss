@@ -6,7 +6,7 @@
         flex-direction: row;
         z-index: 999;
 
-        @include make-div-fullscreen;
+        @include make-div-fullscreen(fixed);
 
         &-indicator {
             flex: 1;
