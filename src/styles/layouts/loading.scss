@@ -4,12 +4,15 @@
     &-indicators {
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
         z-index: 999;
+        pointer-events: none;
 
         @include make-div-fullscreen(fixed);
 
         &-indicator {
             flex: 1;
+            margin: 0 -20px;
             height: 100%;
             transform: scaleY(1);
             background: white;
