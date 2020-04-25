@@ -11,9 +11,11 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.sass('src/main.scss', 'dist/main.css')
+mix.sass('src/styles/main.scss', 'dist/main.css')
+mix.js("src/js/main.js", "dist/main.js");
 
 
 // Test Environment
 mix.copy('dist/main.css', 'test/main.css');
+mix.copy("dist/main.js", "test/main.js");
 mix.disableNotifications();
