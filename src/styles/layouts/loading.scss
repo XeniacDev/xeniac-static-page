@@ -1,1 +1,23 @@
-// ----
+.x-loading {
+    color: black;
+
+    &-indicators {
+        display: flex;
+        flex-direction: row;
+
+        @include make-div-fullscreen;
+
+        &-indicator {
+            flex: 1;
+            height: 100vh;
+            background: white;
+        }
+    }
+
+    &-text {
+        color: black;
+        z-index: 999;
+
+        @include self-center;
+    }
+}
