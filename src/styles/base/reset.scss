@@ -21,6 +21,7 @@ body {
     background: black;
     color: white;
     font-family: var(--font-family);
+    overflow-x: hidden !important;
 }
 
 a {
