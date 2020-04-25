@@ -22,7 +22,7 @@
         height: 47px;
         overflow: hidden;
 
-        @include self-center;
+        @include self-center(fixed);
 
         & > p {
             font-size: 1.7rem;
