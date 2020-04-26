@@ -57,4 +57,18 @@
             }
         }
     }
+
+    &-content {
+        padding-bottom: 100px;
+        width: 100%;
+        text-align: center;
+
+        & > h1 {
+            font-size: 7.5rem;
+        }
+
+        & > p {
+            font-size: 1.3rem;
+        }
+    }
 }
