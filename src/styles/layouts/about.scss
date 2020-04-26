@@ -1,0 +1,25 @@
+///
+.x-about {
+    position: relative;
+    padding-top: 150px;
+
+    &-title {
+        position: relative;
+
+        &-body {
+            width: 700px;
+
+            & > h1 {
+                max-width: 500px;
+            }
+
+            & > p {
+                margin-top: 20px;
+                word-wrap: none;
+                word-break: keep-all;
+                font-size: 1.2rem;
+                line-height: 31px;
+            }
+        }
+    }
+}
