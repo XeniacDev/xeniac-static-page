@@ -5675,7 +5675,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var smoothScroll = function () {
-  gsap__WEBPACK_IMPORTED_MODULE_0__["gsap"].registerPlugin(gsap__WEBPACK_IMPORTED_MODULE_0__["TweenLite"]);
+  gsap__WEBPACK_IMPORTED_MODULE_0__["gsap"].registerPlugin(TweenLite);
   var html = document.documentElement;
   var body = document.body;
   var scroller = {
@@ -5688,7 +5688,7 @@ var smoothScroll = function () {
     scrollRequest: 0
   };
   var requestId = null;
-  gsap__WEBPACK_IMPORTED_MODULE_0__["TweenLite"].set(scroller.target, {
+  gsap__WEBPACK_IMPORTED_MODULE_0__["TweenMax"].set(scroller.target, {
     rotation: 0.01,
     force3D: true
   });
@@ -5719,7 +5719,7 @@ var smoothScroll = function () {
       scroller.scrollRequest = 0;
     }
 
-    gsap__WEBPACK_IMPORTED_MODULE_0__["TweenLite"].set(scroller.target, {
+    gsap__WEBPACK_IMPORTED_MODULE_0__["TweenMax"].set(scroller.target, {
       y: -scroller.y
     });
     requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
