@@ -5615,23 +5615,26 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var animations = function () {
   // variables
   var loadingTextParams = {
-    opacity: 0,
-    y: 100,
+    opacity: 1,
+    y: 0,
     duration: 1.2,
     ease: "expo.inOut"
   };
   var lodingLayout = gsap__WEBPACK_IMPORTED_MODULE_0__["gsap"].timeline({
     yoyo: false
-  }).from(".x-loading-text", _objectSpread({}, loadingTextParams)).to(".x-loading-indicators-indicator", {
+  }).to(".x-loading-text", _objectSpread({}, loadingTextParams)).to(".x-loading-indicators-indicator", {
     scaleY: 0,
     transformOrigin: "50% bottom",
     stagger: 0.1,
     ease: "expo.inOut",
     duration: 1.8,
     onStart: function onStart() {
-      gsap__WEBPACK_IMPORTED_MODULE_0__["gsap"].to(".x-loading-text", _objectSpread({}, loadingTextParams, {
-        delay: 0.5
-      }));
+      gsap__WEBPACK_IMPORTED_MODULE_0__["gsap"].to(".x-loading-text", {
+        opacity: 0,
+        y: 100,
+        ease: "expo.inOut",
+        duration: 2
+      });
       heroSectionAnimation(0.4);
     }
   });
@@ -5672,6 +5675,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var smoothScroll = function () {
+  gsap__WEBPACK_IMPORTED_MODULE_0__["gsap"].registerPlugin(gsap__WEBPACK_IMPORTED_MODULE_0__["TweenLite"]);
   var html = document.documentElement;
   var body = document.body;
   var scroller = {
@@ -5684,7 +5688,7 @@ var smoothScroll = function () {
     scrollRequest: 0
   };
   var requestId = null;
-  gsap__WEBPACK_IMPORTED_MODULE_0__["gsap"].set(scroller.target, {
+  gsap__WEBPACK_IMPORTED_MODULE_0__["TweenLite"].set(scroller.target, {
     rotation: 0.01,
     force3D: true
   });
@@ -5715,7 +5719,7 @@ var smoothScroll = function () {
       scroller.scrollRequest = 0;
     }
 
-    gsap__WEBPACK_IMPORTED_MODULE_0__["gsap"].set(scroller.target, {
+    gsap__WEBPACK_IMPORTED_MODULE_0__["TweenLite"].set(scroller.target, {
       y: -scroller.y
     });
     requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;

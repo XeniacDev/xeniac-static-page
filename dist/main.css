@@ -142,10 +142,14 @@ li {
 }
 
 .x-loading-texts > p {
+  opacity: 0;
+  transform: translateY(100px);
   font-size: 1.7rem;
 }
 
 .x-loading-texts > span {
+  opacity: 0;
+  transform: translateY(100px);
   display: inline-block;
   color: #898989;
   font-size: 0.9rem;
