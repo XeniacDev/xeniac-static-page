@@ -1,0 +1,26 @@
+// Colors
+$bg-color: black;
+$dot-color: white;
+
+// Dimensions
+$dot-size: 2px;
+$dot-space: 22px;
+
+.pattern {
+    position: absolute;
+    right: -300px;
+    top: 100px;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(
+                90deg,
+                $bg-color ($dot-space - $dot-size),
+                transparent 1%
+            )
+            center,
+        linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%)
+            center,
+        $dot-color;
+    background-size: $dot-space $dot-space;
+}
