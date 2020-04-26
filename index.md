@@ -1,1 +1,198 @@
-hello
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/shabnam-font@5.0.0/dist/font-face.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="./dist/main.js" defer></script>
+        <title>test env</title>
+
+        <link rel="stylesheet" href="./dist/main.css" />
+    </head>
+    <body>
+        <div class="x-email">
+            <a href="mailto:anonymousaxis@gmail.com">anonymousaxis@gmail.com</a>
+        </div>
+        <!-- loading layout -->
+
+        <section class="x-loading">
+            <div class="x-loading-indicators">
+                <div class="x-loading-indicators-indicator"></div>
+                <div class="x-loading-indicators-indicator"></div>
+                <div class="x-loading-indicators-indicator"></div>
+                <div class="x-loading-indicators-indicator"></div>
+                <div class="x-loading-indicators-indicator"></div>
+                <div class="x-loading-indicators-indicator"></div>
+            </div>
+            <div class="x-loading-texts">
+                <p class="x-loading-text">
+                    There is no place like 127.0.0.1
+                </p>
+                <span class="x-loading-text">welcome</span>
+            </div>
+        </section>
+
+        <div id="scroll-container" style="overflow: hidden;">
+            <!-- hero layout -->
+            <section class="x-hero" id="x-hero-layout">
+                <div class="x-hero-top-backdrop"></div>
+                <div class="container">
+                    <div class="x-hero-container">
+                        <div class="x-hero-header">
+                            <h1 class="colored-title">
+                                Yousef <span>Roshandel</span>.
+                            </h1>
+                            <ul class="x-hero-header-menu">
+                                <li>
+                                    <a
+                                        href="https://github.com/MahdiFakhr"
+                                        target="_blank"
+                                        >Github</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="https://xeniac.ir/" target="_blank"
+                                        >Xeniac</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="x-hero-content">
+                            <h1 class="x-hero-title large-title">
+                                Hello, My name is Mahdi"medivh0"fakhr
+                            </h1>
+                            <p class="x-hero-description">
+                                I create interactive experiences with modern
+                                tech."Blender Pro"I create interactive
+                                experiences with modern tech.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About layout -->
+            <section class="x-about">
+                <div class="container">
+                    <div class="x-about-title">
+                        <div class="pattern dot-pattern"></div>
+                        <h1 class="extra-large-number">01</h1>
+                        <div class="x-about-title-body">
+                            <h1 class="large-title">
+                                What i'm doing for living?
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsum commodi aspernatur nobis
+                                esse autem harum iusto incidunt? Ipsam minima
+                                quo ducimus obcaecati dolorum accusamus
+                                distinctio, fugiat libero recusandae, sapiente
+                                officia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills layout -->
+            <section class="x-skills">
+                <div class="pattern dot-pattern" style="left: -400px; "></div>
+                <h1
+                    class="extra-large-number"
+                    style="bottom: -420px; right: 0;"
+                >
+                    02
+                </h1>
+                <h1 class="large-title">I have Skills too!</h1>
+                <p>
+                    My main skills are: <span>Javascript</span>,
+                    <span>Vue.js</span>, <span>Nuxt.js</span>,
+                    <span>Ui & Ux Design</span>
+                </p>
+                <div class="x-skills-xp">
+                    <div class="x-xp">
+                        <h1>21</h1>
+                        <span
+                            >Years of <br />
+                            Experience.</span
+                        >
+                    </div>
+
+                    <div class="x-xp">
+                        <h1>365</h1>
+                        <span
+                            >Satisfied <br />
+                            Clients.</span
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <!-- social layout -->
+            <section class="x-about">
+                <div class="container">
+                    <div class="x-about-title">
+                        <div class="pattern dot-pattern"></div>
+                        <h1 class="extra-large-number">03</h1>
+                        <div class="x-about-title-body">
+                            <h1 class="large-title">
+                                Follow my activities on social media.
+                            </h1>
+                            <ul
+                                class="x-hero-header-menu"
+                                style="margin-top: 20px; font-size: 1.6rem;"
+                            >
+                                <li>
+                                    <a
+                                        href="https://github.com/MahdiFakhr"
+                                        target="_blank"
+                                        >GITHUB</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="https://xeniac.ir/" target="_blank"
+                                        >INSTAGRAM</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="x-footer">
+                <div class="x-footer-logo">
+                    <img
+                        width="50"
+                        height="50"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMzQuNjc4IiBoZWlnaHQ9IjI1Ny4wMzEiIHZpZXdCb3g9IjAgMCAyMzQuNjc4IDI1Ny4wMzEiPjxwYXRoIGQ9Ik00MzAuNzIyLDI1NS42NTcsMzU1LjQ4MywyMTIuMTRhNDIuNyw0Mi43LDAsMCwwLTQxLjg4OSwwbC03NS42NDUsNDMuNTE2YTQxLjU0Myw0MS41NDMsMCwwLDAtMjEuMTQ4LDM2LjJ2ODYuNjI2YTQxLjU0Miw0MS41NDIsMCwwLDAsMjEuMTQ4LDM2LjJsNzUuMjM5LDQzLjUxN2E0Mi43LDQyLjcsMCwwLDAsNDEuODksMGw3NS4yMzktNDMuNTE3YTQxLjU0MSw0MS41NDEsMCwwLDAsMjEuMTQ4LTM2LjJWMjkxLjg1M0E0MC4zNjMsNDAuMzYzLDAsMCwwLDQzMC43MjIsMjU1LjY1N1ptLTUxLjY1LDEzOS45SDM1Ny4xMWE4Ljg0NSw4Ljg0NSwwLDAsMS04LjEzNC01LjY5NGwtMTcuNDg4LTQ4LjhjLS40MDctMS4yMi0xLjYyNy0xLjIyLTIuNDQtLjQwN2wtMzYuNiw2Ni43Yy0xLjYyNywzLjI1NC02LjEsMy42Ni04Ljk0NywxLjYyN2wtOC41NDEtNi45MTRjLTIuODQ3LTIuNDQtMy42Ni02LjkxNC0xLjIyLTkuNzYxbDIxLjE0OC0yOS4yODJhMzYuNjgsMzYuNjgsMCwwLDAsMC00Mi4zbC0xNi4yNjgtMjEuOTYyYTYuMTg0LDYuMTg0LDAsMCwxLDQuODgxLTkuNzYxaDE5LjExNWExMi4yNDYsMTIuMjQ2LDAsMCwxLDEwLjk4MSw2LjkxNEwzMjcuNDIxLDMyNS4yYTMuMzUsMy4zNSwwLDAsMCw2LjEuNDA2bDMwLjUtNTMuMjc3LDQuMDY3LTYuOTE0YTkuNTY0LDkuNTY0LDAsMCwxLDEzLjgyOC0yLjg0N2w3LjcyNyw2LjFhMTAuMSwxMC4xLDAsMCwxLDEuNjI3LDEzLjgyN2wtMjYuMDI5LDM2LjJhMzkuMTY4LDM5LjE2OCwwLDAsMCwwLDQ0LjczN2wxNi42NzQsMjIuNzc1QzM4Ni4zOTIsMzkwLjI3MywzODMuNTQ1LDM5NS41NiwzNzkuMDcyLDM5NS41NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMTYuOCAtMjA2LjY1KSIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="
+                        alt="xeniac logo"
+                    />
+                </div>
+                <p>XENIAC | SOFTWARE PRODUCTION</p>
+            </section>
+        </div>
+    </body>
+
+    <style></style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+    <script src="https://www.vantajs.com/dist/vanta.halo.min.js"></script>
+    <script>
+        VANTA.HALO({
+            el: "#x-hero-layout",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 100.0,
+            minWidth: 100.0,
+            size: 1.5,
+            backgroundColor: 0x0
+        });
+    </script>
+</html>
