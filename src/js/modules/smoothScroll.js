@@ -1,7 +1,9 @@
-import { gsap, TweenMax } from "gsap";
+import { gsap, TweenLite } from "gsap";
+import { CSSRulePlugin } from "gsap/CSSRulePlugin";
+
+gsap.registerPlugin(CSSRulePlugin);
 
 let smoothScroll = (function() {
-    gsap.registerPlugin(TweenLite);
     var html = document.documentElement;
     var body = document.body;
 
@@ -16,7 +18,7 @@ let smoothScroll = (function() {
 
     var requestId = null;
 
-    TweenMax.set(scroller.target, {
+    TweenLite.set(scroller.target, {
         rotation: 0.01,
         force3D: true
     });
@@ -50,7 +52,7 @@ let smoothScroll = (function() {
             scroller.scrollRequest = 0;
         }
 
-        TweenMax.set(scroller.target, {
+        TweenLite.set(scroller.target, {
             y: -scroller.y
         });
 
