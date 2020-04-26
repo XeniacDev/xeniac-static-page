@@ -1,0 +1,43 @@
+.x-skills {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+
+    @include child-center;
+
+    & > p {
+        color: rgb(138, 138, 138);
+        font-size: 1.8rem;
+
+        & > span {
+            color: white;
+            font-weight: 300;
+            padding-bottom: 10px;
+            border-bottom: 1px solid white;
+        }
+    }
+
+    &-xp {
+        margin-top: 100px;
+        width: 500px;
+        display: flex;
+        justify-content: flex-start;
+
+        & > .x-xp {
+            display: flex;
+            align-items: center;
+            padding: 30px;
+
+            & > h1 {
+                font-size: 3rem;
+                color: var(--primary-color);
+            }
+
+            & > span {
+                margin-left: 7px;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
