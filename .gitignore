@@ -17,8 +17,6 @@ yarn-error.log
 
 
 # Zal
-/dist
-dist
 build
 mix-manifest.json
 
