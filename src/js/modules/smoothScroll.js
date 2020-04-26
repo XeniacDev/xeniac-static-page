@@ -1,4 +1,4 @@
-import { TweenLite } from "gsap";
+import { gsap } from "gsap";
 
 let smoothScroll = (function() {
     var html = document.documentElement;
@@ -15,7 +15,7 @@ let smoothScroll = (function() {
 
     var requestId = null;
 
-    TweenLite.set(scroller.target, {
+    gsap.set(scroller.target, {
         rotation: 0.01,
         force3D: true
     });
@@ -49,7 +49,7 @@ let smoothScroll = (function() {
             scroller.scrollRequest = 0;
         }
 
-        TweenLite.set(scroller.target, {
+        gsap.set(scroller.target, {
             y: -scroller.y
         });
 
