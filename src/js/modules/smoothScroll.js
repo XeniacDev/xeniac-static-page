@@ -4,6 +4,7 @@ import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 gsap.registerPlugin(CSSRulePlugin);
 
 let smoothScroll = (function() {
+    gsap.registerPlugin(CSSRulePlugin);
     var html = document.documentElement;
     var body = document.body;
 
