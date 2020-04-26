@@ -3,8 +3,8 @@ import { gsap } from "gsap";
 const animations = (function() {
     // variables
     const loadingTextParams = {
-        opacity: 0,
-        y: 100,
+        opacity: 1,
+        y: 0,
         duration: 1.2,
         ease: "expo.inOut"
     };
@@ -13,7 +13,7 @@ const animations = (function() {
         .timeline({
             yoyo: false
         })
-        .from(".x-loading-text", {
+        .to(".x-loading-text", {
             ...loadingTextParams
         })
         .to(".x-loading-indicators-indicator", {
@@ -24,8 +24,10 @@ const animations = (function() {
             duration: 1.8,
             onStart() {
                 gsap.to(".x-loading-text", {
-                    ...loadingTextParams,
-                    delay: 0.5
+                    opacity: 0,
+                    y: 100,
+                    ease: "expo.inOut",
+                    duration: 2,
                 });
                 heroSectionAnimation(0.4);
             }

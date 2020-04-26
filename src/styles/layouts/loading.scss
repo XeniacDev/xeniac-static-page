@@ -28,10 +28,14 @@
         @include self-center(fixed);
 
         & > p {
+            opacity: 0;
+            transform: translateY(100px);
             font-size: 1.7rem;
         }
 
         & > span {
+            opacity: 0;
+            transform: translateY(100px);
             display: inline-block;
             color: rgb(137, 137, 137);
             font-size: 0.9rem;
