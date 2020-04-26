@@ -18,12 +18,10 @@ yarn-error.log
 
 # Zal
 /dist
-/test 
-test
 dist
 build
 mix-manifest.json
 
-
+test/main.js
 test/main.css
 test/tailwind.min.css
