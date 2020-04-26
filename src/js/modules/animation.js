@@ -11,8 +11,7 @@ const animations = (function() {
 
     let lodingLayout = gsap
         .timeline({
-            yoyo: false,
-            onComplete: heroSectionAnimation
+            yoyo: false
         })
         .from(".x-loading-text", {
             ...loadingTextParams
@@ -28,11 +27,31 @@ const animations = (function() {
                     ...loadingTextParams,
                     delay: 0.5
                 });
+                heroSectionAnimation(0.4);
             }
         });
 
-    function heroSectionAnimation() {
-        console.log("hello wolrd");
+    function heroSectionAnimation(delay = 0) {
+        gsap.timeline({
+            yoyo: false,
+            delay: delay
+        })
+            .from(".x-hero-title", {
+                opacity: 0,
+                y: 100,
+                duration: 2,
+                ease: "expo.inOut"
+            })
+            .from(
+                ".x-hero-description",
+                {
+                    opacity: 0,
+                    y: 50,
+                    duration: 1,
+                    ease: "expo.inOut"
+                },
+                "-=1.2"
+            );
     }
 })();
 

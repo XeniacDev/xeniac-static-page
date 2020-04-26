@@ -64,10 +64,12 @@
         text-align: center;
 
         & > h1 {
+            opacity: 1;
             font-size: 7.5rem;
         }
 
         & > p {
+            opacity: 1;
             font-size: 1.3rem;
         }
     }
