@@ -27,7 +27,7 @@ const animations = (function() {
                     opacity: 0,
                     y: 100,
                     ease: "expo.inOut",
-                    duration: 2,
+                    duration: 2
                 });
                 heroSectionAnimation(0.4);
             }

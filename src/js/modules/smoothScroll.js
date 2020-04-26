@@ -1,4 +1,4 @@
-import { gsap ,TweenLite } from "gsap";
+import { gsap, TweenLite } from "gsap";
 
 let smoothScroll = (function() {
     gsap.registerPlugin(TweenLite);
