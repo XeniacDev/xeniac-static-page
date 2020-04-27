@@ -1,5 +1,4 @@
-import rellax from "rellax"
-
+import rellax from "rellax";
 
 let parallax = (function() {
     const parallaxOptions = {
@@ -18,6 +17,5 @@ let parallax = (function() {
         ...parallaxOptions
     });
 })();
-
 
 export default parallax;
