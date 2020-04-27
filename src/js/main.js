@@ -1,3 +1,3 @@
 import smoothScroll from "./modules/smoothScroll";
-import animations from "./modules/animation";
+import loadingAnimation from "./modules/loadingAnimation";
 import parallax from "./modules/parallax";

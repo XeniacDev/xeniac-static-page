@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 
-const animations = (function() {
+const loadingAnimation = (function() {
     // variables
     const loadingTextParams = {
         opacity: 1,
@@ -57,4 +57,4 @@ const animations = (function() {
     }
 })();
 
-export default animations;
+export default loadingAnimation;
