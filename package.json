@@ -46,6 +46,7 @@
   },
   "homepage": "https://github.com/XeniacDev/xeniac-static-page#readme",
   "dependencies": {
-    "gsap": "^3.2.6"
+    "gsap": "^3.2.6",
+    "rellax": "^1.12.1"
   }
 }
