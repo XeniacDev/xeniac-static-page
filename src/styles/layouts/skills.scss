@@ -7,6 +7,11 @@
 
     @include child-center;
 
+    &-title-wrapper {
+        overflow: hidden;
+        height: 111px;
+    }
+
     & > p {
         color: rgb(138, 138, 138);
         font-size: 1.8rem;
