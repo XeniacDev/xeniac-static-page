@@ -10,6 +10,11 @@
     &-title-wrapper {
         overflow: hidden;
         height: 111px;
+
+        & > span {
+            opacity: 0;
+            transform: translateY(150px);
+        }
     }
 
     & > p {

@@ -12,6 +12,11 @@
             & > h1 {
                 max-width: 500px;
                 overflow: hidden;
+
+                & > span {
+                    opacity: 0;
+                    transform: translateY(150px);
+                }
             }
 
             & > p {
