@@ -1,6 +1,9 @@
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/XeniacDev/xeniac-static-page/dist/main.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/XeniacDev/xeniac-static-page/dist/main.min.css"
+        />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
@@ -11,16 +14,18 @@
             href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;900&display=swap"
             rel="stylesheet"
         />
-        <script src="https://cdn.jsdelivr.net/gh/XeniacDev/xeniac-static-page/dist/main.min.js" defer></script>
+        <script
+            src="https://cdn.jsdelivr.net/gh/XeniacDev/xeniac-static-page/dist/main.min.js"
+            defer
+        ></script>
         <title>xeniac example</title>
-
     </head>
-     <body>
+    <body>
         <div class="x-email">
             <a href="mailto:anonymousaxis@gmail.com">anonymousaxis@gmail.com</a>
         </div>
         <!-- loading layout -->
-        
+
         <section class="x-loading">
             <div class="x-loading-indicators">
                 <div class="x-loading-indicators-indicator"></div>
@@ -37,8 +42,6 @@
                 <span class="x-loading-text">welcome</span>
             </div>
         </section>
-
-    
 
         <div id="scroll-container" style="overflow: hidden;">
             <!-- hero layout -->
@@ -80,16 +83,18 @@
             </section>
 
             <!-- About layout -->
-            <section class="x-about">
+            <section class="x-about" id="about">
                 <div class="container">
                     <div class="x-about-title">
                         <div class="pattern dot-pattern"></div>
                         <h1 class="extra-large-number large-number-one">01</h1>
                         <div class="x-about-title-body">
-                            <h1 class="large-title">
-                                What i'm doing for living?
+                            <h1 class="large-title x-about-title">
+                                <span>What i'm</span>
+                                <span>doing for</span>
+                                <span>living?</span>
                             </h1>
-                            <p>
+                            <p class="x-about-description">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Ipsum commodi aspernatur nobis
                                 esse autem harum iusto incidunt? Ipsam minima
@@ -103,7 +108,7 @@
             </section>
 
             <!-- Skills layout -->
-            <section class="x-skills">
+            <section class="x-skills" id="skills" style="padding: 50px 0;">
                 <div class="pattern dot-pattern" style="left: -400px; "></div>
                 <h1
                     class="extra-large-number large-number-two"
@@ -111,8 +116,13 @@
                 >
                     02
                 </h1>
-                <h1 class="large-title">I have Skills too!</h1>
-                <p>
+                <h1 class="large-title x-skills-title-wrapper">
+                    <span>I</span>
+                    <span>Have</span>
+                    <span>Skills</span>
+                    <span>Too</span>
+                </h1>
+                <p class="x-skills-skill-list">
                     My main skills are: <span>Javascript</span>,
                     <span>Vue.js</span>, <span>Nuxt.js</span>,
                     <span>Ui & Ux Design</span>
@@ -137,14 +147,20 @@
             </section>
 
             <!-- social layout -->
-            <section class="x-about">
+            <section class="x-about" id="social">
                 <div class="container">
                     <div class="x-about-title">
                         <div class="pattern dot-pattern"></div>
-                        <h1 class="extra-large-number large-number-three">03</h1>
+                        <h1 class="extra-large-number large-number-three">
+                            03
+                        </h1>
                         <div class="x-about-title-body">
-                            <h1 class="large-title">
-                                Follow my activities on social media.
+                            <h1 class="large-title x-social-title">
+                                <span>Follow</span>
+                                <span>my</span>
+                                <span>activities</span>
+                                <span>on social</span>
+                                <span>media.</span>
                             </h1>
                             <ul
                                 class="x-hero-header-menu"
