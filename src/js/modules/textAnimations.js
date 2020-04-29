@@ -3,8 +3,8 @@ import { gsap } from "gsap";
 const textAnimations = (function() {
     // default params for title animations
     const titleAnimationParams = {
-        opacity: 0,
-        y: 150,
+        opacity: 1,
+        y: 0,
         duration: 1.5,
         stagger: 0.2,
         ease: "expo.inOut"
@@ -19,53 +19,64 @@ const textAnimations = (function() {
 
     // about animations
     let aboutText = document.querySelectorAll(".x-about-title > span");
-    let aboutTL = gsap
-        .timeline()
-        .from(aboutText, {
-            ...titleAnimationParams
-        })
-        .from(
-            ".x-about-description",
-            {
-                ...descriptionAnimationParams
-            },
-            "-=1.3"
-        );
+
+    let aboutTL = function() {
+        return gsap
+            .timeline()
+            .to(aboutText, {
+                ...titleAnimationParams
+            })
+            .from(
+                ".x-about-description",
+                {
+                    ...descriptionAnimationParams
+                },
+                "-=1.3"
+            );
+    };
 
     // skills animations
     let skillsText = document.querySelectorAll(
         ".x-skills-title-wrapper > span"
     );
     let xpList = document.querySelectorAll(".x-skills-xp > .x-xp");
-    let skillsTL = gsap
-        .timeline()
-        .from(skillsText, {
-            ...titleAnimationParams
-        })
-        .from(
-            ".x-skills-skill-list",
-            {
-                ...descriptionAnimationParams
-            },
-            "-=1.3"
-        )
-        .from(
-            xpList,
-            {
-                opacity: 0,
-                x: -50,
-                duration: 1,
-                stagger: 0.4,
-                ease: "expo"
-            },
-            "-=1.4"
-        );
+    let skillsTL = function() {
+        return gsap
+            .timeline()
+            .to(skillsText, {
+                ...titleAnimationParams
+            })
+            .from(
+                ".x-skills-skill-list",
+                {
+                    ...descriptionAnimationParams
+                },
+                "-=1.3"
+            )
+            .from(
+                xpList,
+                {
+                    opacity: 0,
+                    x: -50,
+                    duration: 1,
+                    stagger: 0.4,
+                    ease: "expo"
+                },
+                "-=1.4"
+            );
+    };
 
     // social animations
     const socialText = document.querySelectorAll(".x-social-title > span");
-    let socialTL = gsap.timeline().from(socialText, {
-        ...titleAnimationParams
-    });
+    let socialTL = function() {
+        return gsap.timeline().to(socialText, {
+            ...titleAnimationParams
+        });
+    };
+
+    return {
+        f: { aboutTL, skillsTL, socialTL }
+    };
 })();
 
 export default textAnimations;
