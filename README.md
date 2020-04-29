@@ -3,7 +3,7 @@ Simple portfolio page using gsap animations for xeniac
 [live demo](https://xeniacdev.github.io/xeniac-static-page/)
 
 
-## variables
+## css variables
 
 | variable | description |
 |--|--|
