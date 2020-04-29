@@ -47,6 +47,8 @@
   "homepage": "https://github.com/XeniacDev/xeniac-static-page#readme",
   "dependencies": {
     "gsap": "^3.2.6",
-    "rellax": "^1.12.1"
+    "rellax": "^1.12.1",
+    "scrollmagic": "^2.0.7",
+    "scrollmagic-plugin-gsap": "^1.0.4"
   }
 }
