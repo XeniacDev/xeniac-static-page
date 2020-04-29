@@ -8,8 +8,14 @@
     @include child-center;
 
     &-title-wrapper {
+        text-align: center;
+        width: 100%;
         overflow: hidden;
         height: 111px;
+
+        @include query(852px) {
+            height: auto;
+        }
 
         & > span {
             opacity: 0;
@@ -20,6 +26,11 @@
     & > p {
         color: rgb(138, 138, 138);
         font-size: 1.8rem;
+        display: flex;
+
+        @include query(736px) {
+            flex-direction: column;
+        }
 
         & > span {
             color: white;
@@ -34,6 +45,14 @@
         width: 500px;
         display: flex;
         justify-content: flex-start;
+
+        @include query(528px) {
+            max-width: 100%;
+        }
+
+        @include query(384px) {
+            flex-direction: column;
+        }
 
         & > .x-xp {
             display: flex;

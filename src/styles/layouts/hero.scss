@@ -26,6 +26,15 @@
         z-index: 0;
     }
 
+    &-title {
+        word-wrap: break-word;
+        word-break: break-all;
+
+        @include query(728px) {
+            font-size: 5rem;
+        }
+    }
+
     &-header {
         position: relative;
         z-index: 1;

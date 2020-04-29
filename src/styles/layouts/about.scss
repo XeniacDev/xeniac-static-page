@@ -9,9 +9,21 @@
         &-body {
             width: 700px;
 
+            @include query(700px) {
+                max-width: 100%;
+            }
+
+            @include query(492px) {
+                text-align: center;
+            }
+
             & > h1 {
                 max-width: 500px;
                 overflow: hidden;
+
+                @include query(492px) {
+                    font-size: 5rem;
+                }
 
                 & > span {
                     opacity: 0;
@@ -27,5 +39,13 @@
                 line-height: 31px;
             }
         }
+    }
+}
+
+.x-hero-header-menu {
+    @include query(492px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

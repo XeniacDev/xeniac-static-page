@@ -5,4 +5,8 @@
     z-index: 99;
     letter-spacing: 2px;
     transform: rotate(90deg);
+
+    @include query(900px) {
+        display: none;
+    }
 }

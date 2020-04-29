@@ -1,4 +1,8 @@
 .container {
     width: 1200px;
     margin: 0 auto;
+
+    @include query(1100px) {
+        max-width: 100%;
+    }
 }
