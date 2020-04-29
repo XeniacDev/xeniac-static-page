@@ -40,6 +40,10 @@ li {
   list-style: none;
 }
 
+span {
+  display: inline-block;
+}
+
 .colored-title {
   font-weight: 900;
   color: var(--primary-color);
@@ -64,6 +68,12 @@ li {
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    max-width: 100%;
+  }
 }
 
 /* width */
@@ -103,6 +113,12 @@ li {
   z-index: 99;
   letter-spacing: 2px;
   transform: rotate(90deg);
+}
+
+@media (max-width: 900px) {
+  .x-email {
+    display: none;
+  }
 }
 
 .x-loading {
@@ -181,6 +197,17 @@ li {
   z-index: 0;
 }
 
+.x-hero-title {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+@media (max-width: 728px) {
+  .x-hero-title {
+    font-size: 5rem;
+  }
+}
+
 .x-hero-header {
   position: relative;
   z-index: 1;
@@ -241,8 +268,32 @@ li {
   width: 700px;
 }
 
+@media (max-width: 700px) {
+  .x-about-title-body {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 492px) {
+  .x-about-title-body {
+    text-align: center;
+  }
+}
+
 .x-about-title-body > h1 {
   max-width: 500px;
+  overflow: hidden;
+}
+
+@media (max-width: 492px) {
+  .x-about-title-body > h1 {
+    font-size: 5rem;
+  }
+}
+
+.x-about-title-body > h1 > span {
+  opacity: 0;
+  transform: translateY(150px);
 }
 
 .x-about-title-body > p {
@@ -251,6 +302,14 @@ li {
   word-break: keep-all;
   font-size: 1.2rem;
   line-height: 31px;
+}
+
+@media (max-width: 492px) {
+  .x-hero-header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .x-skills {
@@ -264,9 +323,34 @@ li {
   align-items: center;
 }
 
+.x-skills-title-wrapper {
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  height: 111px;
+}
+
+@media (max-width: 852px) {
+  .x-skills-title-wrapper {
+    height: auto;
+  }
+}
+
+.x-skills-title-wrapper > span {
+  opacity: 0;
+  transform: translateY(150px);
+}
+
 .x-skills > p {
   color: #8a8a8a;
   font-size: 1.8rem;
+  display: flex;
+}
+
+@media (max-width: 736px) {
+  .x-skills > p {
+    flex-direction: column;
+  }
 }
 
 .x-skills > p > span {
@@ -281,6 +365,18 @@ li {
   width: 500px;
   display: flex;
   justify-content: flex-start;
+}
+
+@media (max-width: 528px) {
+  .x-skills-xp {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 384px) {
+  .x-skills-xp {
+    flex-direction: column;
+  }
 }
 
 .x-skills-xp > .x-xp {
